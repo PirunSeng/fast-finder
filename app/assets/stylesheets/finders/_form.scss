@@ -1,0 +1,8 @@
+body[id='finders-new'],
+body[id='finders-create'],
+body[id='finders-edit'],
+body[id='finders-update'], {
+  .finder_description label {
+    position: inherit;
+  }
+}

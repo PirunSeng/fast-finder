@@ -7,5 +7,7 @@
 //= require util
 //= require common
 //= require initializer
+//= require ckeditor/init
 
 //= require finders
+//= require ckeditor/config

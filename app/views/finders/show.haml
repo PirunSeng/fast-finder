@@ -17,7 +17,7 @@
         %p
           %strong Description
       .col.s12.m8
-        %p= @finder.description
+        %p= @finder.description.html_safe
 
     - if user_signed_in?
       = link_to 'Back', finders_path, class: 'btn waves-effect waves-light blue'

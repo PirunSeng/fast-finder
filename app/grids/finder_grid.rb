@@ -14,5 +14,7 @@ class FinderGrid
     link_to object.reference, object.reference, target: :_blank
   end
   column(:reference, html: false)
-  column(:description)
+  column(:description) do |object|
+    object.description.html_safe
+  end
 end

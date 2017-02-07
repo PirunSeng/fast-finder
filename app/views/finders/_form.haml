@@ -4,7 +4,7 @@
   .input-field
     = f.input :reference, label: 'Reference'
   .input-field
-    = f.input :description, as: :text, input_html: { class: 'materialize-textarea' }
+    = f.input :description, as: :ckeditor
   .input-field
     = f.submit class: 'btn green'
     = link_to 'Cancel', finders_path, class: 'btn waves-effect waves-light blue'
