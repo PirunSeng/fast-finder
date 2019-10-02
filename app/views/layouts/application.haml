@@ -1,10 +1,19 @@
 !!!
 %html
   %head
+    / Google Tag Manager
+    :javascript
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T443V3T');
+    / End Google Tag Manager
+
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-    %title FastFinder
+    %title FastFinder | Analytic
 
     %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
@@ -14,6 +23,11 @@
       try{Typekit.load();}catch(e){}
     = csrf_meta_tags
   %body{ id: "#{controller_name}-#{params[:action]}" }
+    / Google Tag Manager (noscript)
+    %noscript
+      %iframe{:height => "0", :src => "https://www.googletagmanager.com/ns.html?id=GTM-T443V3T", :style => "display:none;visibility:hidden", :width => "0"}
+    / End Google Tag Manager (noscript)
+
     = render 'shared/navbar_header'
     .container
       #notice.hide= notice if notice
