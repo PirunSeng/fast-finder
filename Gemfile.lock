@@ -1,9 +1,8 @@
 GIT
-  remote: git://github.com/galetahub/ckeditor.git
-  revision: 11d3a5b905646c6fd397f7710f95fb9eb29f0865
+  remote: https://github.com/galetahub/ckeditor.git
+  revision: 8200ccdbf789669d154b800aab329db8f46aabdc
   specs:
-    ckeditor (4.2.2)
-      cocaine
+    ckeditor (5.1.1)
       orm_adapter (~> 0.5.0)
 
 GEM
@@ -51,9 +50,6 @@ GEM
     builder (3.2.2)
     byebug (8.1.0)
     cancancan (1.13.1)
-    climate_control (0.1.0)
-    cocaine (0.5.8)
-      climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -113,7 +109,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    rack (1.6.4)
+    rack (1.6.13)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.4)
